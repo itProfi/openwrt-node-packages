@@ -29,7 +29,7 @@ define Package/node-red-contrib-alice
   CATEGORY:=Languages
   TITLE:=The module allows you to use Node-Red together with the Yandex.Alice voice assistant service
   URL:=https://flows.nodered.org/node/node-red-contrib-alice
-  DEPENDS:=+node +node-npm
+  DEPENDS:=+node +node-red
 endef
 
 define Package/node-red-contrib-alice/description
