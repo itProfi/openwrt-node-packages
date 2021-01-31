@@ -22,7 +22,6 @@ PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
 
 include $(INCLUDE_DIR)/package.mk
-include ../npm-package.mk
 
 define Package/node-red-contrib-blockly
   SUBMENU:=Node.js

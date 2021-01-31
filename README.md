@@ -15,7 +15,7 @@ See [LICENSE](LICENSE) file.
 
 Add the following line to feeds.conf or feeds.conf.default.
 ```
-src-git node https://github.com/itProfi/openwrt-node-packages.git
+src-git node https://github.com/itProfi/openwrt-node-packages.git;openwrt-19.07
 ```
 
 Run
