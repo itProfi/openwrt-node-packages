@@ -73,4 +73,4 @@ define Package/node-lumi22mqtt/install
 endef
 
 
-$(eval $(call BuildPackage,node-lumi2mqtt))
+$(eval $(call BuildPackage,node-lumi22mqtt))
