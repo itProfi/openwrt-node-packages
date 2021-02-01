@@ -20,10 +20,11 @@ src-git node https://github.com/itProfi/openwrt-node-packages.git;openwrt-19.07
 
 Run
 ```
+sudo rm -R ./feeds/node
+sudo rm -R ./feeds/node.tmp
 ./scripts/feeds update node
-rm ./package/feeds/packages/node
-rm ./package/feeds/packages/node-*
 ./scripts/feeds install -a -p node
+make defconfig
 ```
 
 ## Note
