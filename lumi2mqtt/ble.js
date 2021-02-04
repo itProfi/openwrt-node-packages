@@ -6,7 +6,7 @@ var mqtt_url = ("xxx.yyy.zzz"); //you mqtt server
 var url = "mqtt://" + mqtt_url; 
 var mqtt_topic = ('ble2mqtt');  //you root topic
 var mqtt_options = {
-    port: 35216, //you port
+    port: 1883, //you port
     clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
     username:"username",  //you username
     password: "password", //you password
