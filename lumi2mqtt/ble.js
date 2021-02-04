@@ -2,14 +2,14 @@ var noble = require('@abandonware/noble');
 const crypto = require("crypto");
 //My MQTT////////////////////////////////
 var mqtt = require('mqtt');
-var mqtt_url = ("mal20.keenetic.link"); //you mqtt server
+var mqtt_url = ("xxx.yyy.zzz"); //you mqtt server
 var url = "mqtt://" + mqtt_url; 
 var mqtt_topic = ('ble2mqtt');  //you root topic
 var mqtt_options = {
     port: 35216, //you port
     clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
-    username:"my_mqtt_client_1",  //you username
-    password: "lstt2005", //you password
+    username:"username",  //you username
+    password: "password", //you password
     };
 // Create a client connection
 var mqttclient = mqtt.connect(url, mqtt_options);
