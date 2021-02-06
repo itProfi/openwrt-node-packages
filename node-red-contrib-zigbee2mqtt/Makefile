@@ -29,7 +29,7 @@ define Package/node-red-contrib-zigbee2mqtt
   CATEGORY:=Languages
   TITLE:=The module allows you to use Node-Red together with the Yandex.Alice voice assistant service
   URL:=https://flows.nodered.org/node/node-red-contrib-zigbee2mqtt
-  DEPENDS:=+node +node-red +mqtt +request
+  DEPENDS:=+node +node-red +node-ws +node-mqtt +request
 endef
 
 define Package/node-red-contrib-zigbee2mqtt/description
