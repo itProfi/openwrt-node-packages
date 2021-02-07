@@ -28,7 +28,14 @@ make package/node-red-contrib-zigbee2mqtt/prepare V=sc ?
 make package/node-red-contrib-zigbee2mqtt/compile -j5 V=1 ?
 make defconfig
 ```
-
+Backup node-red-contrib-zigbee2mqtt
+```
+tar -cvpzf /tmp/node-red-contrib-zigbee2mqtt.tar.gz --add-file /usr/lib/node/node-red-contrib-zigbee2mqtt/*
+```
+Extract node-red-contrib-zigbee2mqtt
+```
+tar -C /usr/lib/node/node-red-contrib-zigbee2mqtt/ -zxvf /tmp/node-red-contrib-zigbee2mqtt.tar.gz --unlink-first
+```
 ## Note
 
 Python2 becomes EoL, node v8.x will not be supported.
