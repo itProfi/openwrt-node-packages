@@ -20,10 +20,12 @@ src-git node https://github.com/itProfi/openwrt-node-packages.git;openwrt-19.07
 
 Run
 ```
-sudo rm -R ./feeds/node
-sudo rm -R ./feeds/node.tmp
+sudo rm -R ./feeds/node  ?
+sudo rm -R ./feeds/node.tmp  ?
 ./scripts/feeds update node
 ./scripts/feeds install -a -p node
+make package/node-red-contrib-zigbee2mqtt/prepare V=sc ?
+make package/node-red-contrib-zigbee2mqtt/compile -j5 V=1 ?
 make defconfig
 ```
 
