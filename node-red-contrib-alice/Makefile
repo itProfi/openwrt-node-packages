@@ -29,7 +29,7 @@ define Package/node-red-contrib-alice
   CATEGORY:=Languages
   TITLE:=The module allows you to use Node-Red together with the Yandex.Alice voice assistant service
   URL:=https://flows.nodered.org/node/node-red-contrib-alice
-  DEPENDS:=+node +node-red +firebase +mqtt
+  DEPENDS:=+node +node-red
 endef
 
 define Package/node-red-contrib-alice/description
@@ -64,7 +64,7 @@ define Package/node-red-contrib-alice/install
 		$(INSTALL_DIR) $(1)/usr/lib/node/$(PKG_NPM_NAME)
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/node_modules/$(PKG_NPM_NAME)/{package.json,*.md} \
 		$(1)/usr/lib/node/$(PKG_NPM_NAME)/
-	$(CP) $(PKG_INSTALL_DIR)/usr/lib/node_modules/$(PKG_NPM_NAME)/{nodes,img,icons} \
+	$(CP) $(PKG_INSTALL_DIR)/usr/lib/node_modules/$(PKG_NPM_NAME)/{nodes,node-modules,img,icons} \
 		$(1)/usr/lib/node/$(PKG_NPM_NAME)/
 	$(INSTALL_DIR) $(1)/usr/lib/node_modules
 	$(LN) ../node/$(PKG_NPM_NAME) $(1)/usr/lib/node_modules/$(PKG_NPM_NAME)
