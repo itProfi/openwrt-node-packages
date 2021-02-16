@@ -6,12 +6,12 @@ include $(TOPDIR)/rules.mk
 
 PKG_NPM_NAME:=node-red-contrib-alice
 PKG_NAME:=$(PKG_NPM_NAME)
-PKG_VERSION:=0.5.3
+PKG_VERSION:=0.5.4
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NPM_NAME)-$(PKG_VERSION).tgz
 PKG_SOURCE_URL:=https://registry.npmjs.org/$(PKG_NPM_NAME)/-/
-PKG_HASH:=4e4d112aecc78c1cf6d757af63d95e92b14a21327e106a1e3422fa1398e401e6
+PKG_HASH:=e966a9f1dbd283c6aec499ab23b3dfaa5909ebdf811269ae5c4f8d7aadc1f8f1
 
 PKG_MAINTAINER:=Efa2000
 PKG_LICENSE:=MIT
@@ -29,7 +29,7 @@ define Package/node-red-contrib-alice
   CATEGORY:=Languages
   TITLE:=The module allows you to use Node-Red together with the Yandex.Alice voice assistant service
   URL:=https://flows.nodered.org/node/node-red-contrib-alice
-  DEPENDS:=+node +node-red
+  DEPENDS:=+node +node-red +firebase +mqtt
 endef
 
 define Package/node-red-contrib-alice/description
