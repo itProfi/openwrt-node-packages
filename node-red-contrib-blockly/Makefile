@@ -56,7 +56,6 @@ define Build/Compile
 	npm_config_cache=$(TMP_DIR)/npm-cache-$(TMPNPM) \
 	npm_config_tmp=$(TMP_DIR)/npm-tmp-$(TMPNPM) \
 	npm install -g --production $(PKG_BUILD_DIR)
-	modclean --patterns="default:*" -p $(PKG_BUILD_DIR) -r
 	rm -rf $(TMP_DIR)/npm-tmp-$(TMPNPM)
 	rm -rf $(TMP_DIR)/npm-cache-$(TMPNPM)
 endef
