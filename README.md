@@ -37,7 +37,19 @@ Extract node-red-contrib-zigbee2mqtt
 tar -C /usr/lib/node/node-red-contrib-zigbee2mqtt/ -zxvf /tmp/node-red-contrib-zigbee2mqtt.tar.gz --unlink-first
 ```
 ## Note
+<<<<<<< HEAD
 
+=======
+If you want to use with Chaos Calmer(15.05), see [for-15.05 branch](https://github.com/nxhack/openwrt-node-packages/tree/for-15.05) (***End of life***)
+
+If you want to use with LEDE (17.01), see [lede-17.01 branch](https://github.com/nxhack/openwrt-node-packages/tree/lede-17.01) (***End of life***)
+
+If you want to use with 18.06, see [openwrt-18.06 branch](https://github.com/nxhack/openwrt-node-packages/tree/openwrt-18.06) (***Outdated release: No longer receiving updates***)
+
+MIPS(be) will no longer be supported because 'nosnapshot' build is deprecated.
+
+OpenSSL 1.0.x becomes EoL, OpenWrt-18.06 will not be supported.
+>>>>>>> fbd268ab0743cd563148c278a3efb8c14d4838bd
 Python2 becomes EoL, node v8.x will not be supported.
 
 On the host side, the following preparations are required.
