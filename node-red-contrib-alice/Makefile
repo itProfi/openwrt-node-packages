@@ -58,6 +58,7 @@ define Build/Compile
 	npm install -g $(PKG_BUILD_DIR)
 	rm -rf $(TMP_DIR)/npm-tmp-$(TMPNPM)
 	rm -rf $(TMP_DIR)/npm-cache-$(TMPNPM)
+	modclean --patterns="default:*" -r
 endef
 
 define Package/node-red-contrib-alice/install
